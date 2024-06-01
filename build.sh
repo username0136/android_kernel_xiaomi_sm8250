@@ -74,7 +74,7 @@ ZIPNAME=Star-Kernel-Altair
 FINAL_ZIP=${ZIPNAME}-${VERSION}-${DEVICE}-${TM}.zip
 
 # Specify compiler [ proton, nexus, aosp ]
-COMPILER=aosp
+COMPILER=zyc
 
 # Clone ToolChain
 function cloneTC() {
@@ -189,8 +189,8 @@ function exports() {
         export SUBARCH=arm64
                
         # KBUILD HOST and USER
-        export HOST= PixelStar
-	export USER= Builder
+        export HOST="CachyOS"
+	export USER="Quick"
         
         # CI
         if [ "$CI" ]
