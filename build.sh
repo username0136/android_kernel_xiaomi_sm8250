@@ -74,7 +74,7 @@ ZIPNAME=Star-Kernel-Altair
 FINAL_ZIP=${ZIPNAME}-${VERSION}-${DEVICE}-${TM}.zip
 
 # Specify compiler [ proton, nexus, aosp ]
-COMPILER=zyc
+COMPILER=aosp
 
 # Clone ToolChain
 function cloneTC() {
